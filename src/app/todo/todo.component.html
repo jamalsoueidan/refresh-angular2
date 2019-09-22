@@ -1,0 +1,11 @@
+<h3>Todo</h3>
+<ul>
+  <app-todo-item *ngFor="let todo of todos | async | filter: notCompleted " [todo]="todo" (onDelete)="onDelete($event)" (onToggle)="onToggle($event)"></app-todo-item>
+</ul>
+
+<app-todo-form (onSubmit)="onSubmit($event)"></app-todo-form>
+
+<h3>Completed</h3>
+<ul>
+  <app-todo-item *ngFor="let todo of todos | async | filter: completed  | reverse" [todo]="todo" (onToggle)="onToggle($event)"></app-todo-item>
+</ul>
