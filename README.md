@@ -2,7 +2,7 @@
 
 Going through the different aspects of Angular 2...
 
-## Development server
+## Touching
 
 - Setup angular-cli
 - Forms and validation
@@ -14,3 +14,12 @@ Going through the different aspects of Angular 2...
 - Routing
 - Lifecycle
 - Pipes
+
+## Development server
+
+```javascript
+npm install
+ng server
+```
+
+Goto http://localhost:4200
